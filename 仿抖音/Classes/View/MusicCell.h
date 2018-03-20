@@ -11,4 +11,6 @@
 @interface MusicCell : CardCell
 -(void)play;
 -(void)pause;
+
+@property(nonatomic,strong)UIImageView *musicImageView;
 @end

@@ -93,7 +93,6 @@
     CGFloat offsetY = scrollView.contentOffset.y;
     NSInteger index = offsetY/CGRectGetHeight(scrollView.bounds) + self.currentIndex;
     
-    NSLog(@"1111   %ld", index-self.currentIndex);
     if ([self.delegate respondsToSelector:@selector(cardView:willBeginScrollIndex:cell:)]) {
         [self.delegate cardView:self willBeginScrollIndex:index cell:self.cells[index-self.currentIndex]];
     }
@@ -171,7 +170,7 @@
         _scrollView = [[UIScrollView alloc] init];
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.pagingEnabled = YES;
-        _scrollView.bounces = NO;
+//        _scrollView.bounces = NO;
         _scrollView.delegate = self;
         [self addSubview:_scrollView];
         [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {

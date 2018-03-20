@@ -19,7 +19,10 @@ typedef NS_ENUM(NSUInteger, PlayerLoadStatus) {
 
 //当视频加载status状态发生改变时回调
 -(void)playerView:(PlayerView*)playerView loadStatus:(PlayerLoadStatus)loadStatus;
+//缓存回调
 -(void)playerView:(PlayerView*)playerView currentTime:(NSTimeInterval)currentTime;
+//播放完成
+-(void)playerViewDidFinish:(PlayerView*)playerView;
 @end
 
 @interface PlayerView : UIView

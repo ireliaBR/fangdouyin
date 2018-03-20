@@ -9,9 +9,16 @@
 #import "CardModel.h"
 #import <UIKit/UIKit.h>
 #import "VideoModel.h"
+#import "AuthorModel.h"
+#import "MusModel.h"
 
 @interface MusicModel : CardModel
 @property(nonatomic,assign)long author_user_id;
 @property(nonatomic,assign)int rate;
 @property(nonatomic,strong)VideoModel *video;
+@property(nonatomic,strong)AuthorModel *author;
+@property(nonatomic,copy)NSString *desc;
+@property(nonatomic,strong)MusModel *music;
+
++(NSArray<MusicModel*>*)models;
 @end

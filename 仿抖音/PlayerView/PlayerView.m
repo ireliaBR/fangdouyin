@@ -143,6 +143,16 @@
 ////            float total=CMTimeGetSeconds([self.playerItem duration]);
 //            NSLog(@"当前已经播放%.2fs.",current);
 //        }];
+        __weak typeof(self) weakSelf = self;
+        [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1.0, 1.0) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+            float current=CMTimeGetSeconds(time);
+            float total=CMTimeGetSeconds([weakSelf.playerItem duration]);
+            if (current == total) {
+                if ([weakSelf.delegate respondsToSelector:@selector(playerViewDidFinish:)]) {
+                    [weakSelf.delegate playerViewDidFinish:weakSelf];
+                }
+            }
+        }];
     }
     return _player;
 }

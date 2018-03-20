@@ -24,6 +24,10 @@
 		FF54DC89205FB0F000D2FFF7 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54DC88205FB0F000D2FFF7 /* VideoModel.m */; };
 		FF54DC8C205FB11A00D2FFF7 /* PlayAddrModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54DC8B205FB11A00D2FFF7 /* PlayAddrModel.m */; };
 		FF54DC8F205FB73D00D2FFF7 /* CoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54DC8E205FB73D00D2FFF7 /* CoverModel.m */; };
+		FF5B9F9D2060F72F0048C412 /* AuthorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5B9F9C2060F72F0048C412 /* AuthorModel.m */; };
+		FF5B9FA02060F7CA0048C412 /* MusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5B9F9F2060F7CA0048C412 /* MusModel.m */; };
+		FF5B9FA32060FAD90048C412 /* CoverLargeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5B9FA22060FAD90048C412 /* CoverLargeModel.m */; };
+		FF5B9FA5206100790048C412 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = FF5B9FA4206100790048C412 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,13 @@
 		FF54DC8B205FB11A00D2FFF7 /* PlayAddrModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayAddrModel.m; sourceTree = "<group>"; };
 		FF54DC8D205FB73D00D2FFF7 /* CoverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverModel.h; sourceTree = "<group>"; };
 		FF54DC8E205FB73D00D2FFF7 /* CoverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverModel.m; sourceTree = "<group>"; };
+		FF5B9F9B2060F72F0048C412 /* AuthorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorModel.h; sourceTree = "<group>"; };
+		FF5B9F9C2060F72F0048C412 /* AuthorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorModel.m; sourceTree = "<group>"; };
+		FF5B9F9E2060F7CA0048C412 /* MusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusModel.h; sourceTree = "<group>"; };
+		FF5B9F9F2060F7CA0048C412 /* MusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusModel.m; sourceTree = "<group>"; };
+		FF5B9FA12060FAD90048C412 /* CoverLargeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverLargeModel.h; sourceTree = "<group>"; };
+		FF5B9FA22060FAD90048C412 /* CoverLargeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverLargeModel.m; sourceTree = "<group>"; };
+		FF5B9FA4206100790048C412 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,27 +143,16 @@
 		FF178E9C205A20E8006FE406 /* 仿抖音 */ = {
 			isa = PBXGroup;
 			children = (
+				FF5B9F972060F6F60048C412 /* Classes */,
 				FF54DC44205F931C00D2FFF7 /* PlayerView */,
 				FF178ECA205A715A006FE406 /* CardView */,
 				FF178E9D205A20E8006FE406 /* AppDelegate.h */,
 				FF178E9E205A20E8006FE406 /* AppDelegate.m */,
-				FF178EA0205A20E8006FE406 /* ViewController.h */,
-				FF178EA1205A20E8006FE406 /* ViewController.m */,
 				FF178EA3205A20E8006FE406 /* Main.storyboard */,
 				FF178EA6205A20E8006FE406 /* Assets.xcassets */,
 				FF178EA8205A20E8006FE406 /* LaunchScreen.storyboard */,
 				FF178EAB205A20E8006FE406 /* Info.plist */,
 				FF178EAC205A20E8006FE406 /* main.m */,
-				FF178ED4205A71AC006FE406 /* MusicModel.h */,
-				FF178ED5205A71AC006FE406 /* MusicModel.m */,
-				FF178ED7205A71D0006FE406 /* MusicCell.h */,
-				FF178ED8205A71D0006FE406 /* MusicCell.m */,
-				FF54DC87205FB0F000D2FFF7 /* VideoModel.h */,
-				FF54DC88205FB0F000D2FFF7 /* VideoModel.m */,
-				FF54DC8A205FB11A00D2FFF7 /* PlayAddrModel.h */,
-				FF54DC8B205FB11A00D2FFF7 /* PlayAddrModel.m */,
-				FF54DC8D205FB73D00D2FFF7 /* CoverModel.h */,
-				FF54DC8E205FB73D00D2FFF7 /* CoverModel.m */,
 			);
 			path = "仿抖音";
 			sourceTree = "<group>";
@@ -186,6 +186,56 @@
 				FF54DC46205F932B00D2FFF7 /* PlayerView.m */,
 			);
 			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		FF5B9F972060F6F60048C412 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FF5B9F9A2060F7080048C412 /* View */,
+				FF5B9F992060F7030048C412 /* Model */,
+				FF5B9F982060F6FD0048C412 /* Controller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FF5B9F982060F6FD0048C412 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF178EA0205A20E8006FE406 /* ViewController.h */,
+				FF178EA1205A20E8006FE406 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF5B9F992060F7030048C412 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF178ED4205A71AC006FE406 /* MusicModel.h */,
+				FF178ED5205A71AC006FE406 /* MusicModel.m */,
+				FF54DC87205FB0F000D2FFF7 /* VideoModel.h */,
+				FF54DC88205FB0F000D2FFF7 /* VideoModel.m */,
+				FF54DC8A205FB11A00D2FFF7 /* PlayAddrModel.h */,
+				FF54DC8B205FB11A00D2FFF7 /* PlayAddrModel.m */,
+				FF54DC8D205FB73D00D2FFF7 /* CoverModel.h */,
+				FF54DC8E205FB73D00D2FFF7 /* CoverModel.m */,
+				FF5B9F9B2060F72F0048C412 /* AuthorModel.h */,
+				FF5B9F9C2060F72F0048C412 /* AuthorModel.m */,
+				FF5B9F9E2060F7CA0048C412 /* MusModel.h */,
+				FF5B9F9F2060F7CA0048C412 /* MusModel.m */,
+				FF5B9FA12060FAD90048C412 /* CoverLargeModel.h */,
+				FF5B9FA22060FAD90048C412 /* CoverLargeModel.m */,
+				FF5B9FA4206100790048C412 /* data.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF5B9F9A2060F7080048C412 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF178ED7205A71D0006FE406 /* MusicCell.h */,
+				FF178ED8205A71D0006FE406 /* MusicCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +326,7 @@
 				FF178EAA205A20E8006FE406 /* LaunchScreen.storyboard in Resources */,
 				FF178EA7205A20E8006FE406 /* Assets.xcassets in Resources */,
 				FF178EA5205A20E8006FE406 /* Main.storyboard in Resources */,
+				FF5B9FA5206100790048C412 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,10 +410,13 @@
 				FF54DC8C205FB11A00D2FFF7 /* PlayAddrModel.m in Sources */,
 				FF54DC89205FB0F000D2FFF7 /* VideoModel.m in Sources */,
 				FF178EA2205A20E8006FE406 /* ViewController.m in Sources */,
+				FF5B9F9D2060F72F0048C412 /* AuthorModel.m in Sources */,
 				FF178ED1205A715A006FE406 /* CardModel.m in Sources */,
 				FF178ED6205A71AC006FE406 /* MusicModel.m in Sources */,
+				FF5B9FA02060F7CA0048C412 /* MusModel.m in Sources */,
 				FF178ED2205A715A006FE406 /* CardCell.m in Sources */,
 				FF54DC8F205FB73D00D2FFF7 /* CoverModel.m in Sources */,
+				FF5B9FA32060FAD90048C412 /* CoverLargeModel.m in Sources */,
 				FF178EAD205A20E8006FE406 /* main.m in Sources */,
 				FF178E9F205A20E8006FE406 /* AppDelegate.m in Sources */,
 				FF54DC47205F932B00D2FFF7 /* PlayerView.m in Sources */,

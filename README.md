@@ -1,5 +1,5 @@
 # fangdouyin
-仿抖音滑动效果
+抖音滑动效果
 
 ## Start
 
